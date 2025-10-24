@@ -3,7 +3,7 @@ Python/Micropython framework for ROS2/asyncio robot car
 
 This is a project I started about 6 years ago to create a framework and working examples of controlling robot cars based on either Raspberry Pi 3/4/5/zero, ESP32 or Raspberry Pi Pico. The base code runs on either full Python or on MicroPython with minimal changes.  I use RO2 for message communications using the ROS2-Bridge-Suite.  The Bridge Suite allows either platform (Windows, Ubuntu, RPi, ESP32/Pico) to communicate with ROS2 nodes without installing ROS2 on the actual devices.
 
-I initially tried pure ROS2 development but I just don't understand the development/build/debug environment of ROS2. I like the modern dev methods of VS Code on Windows/Linux (local and remote) and Thonny for ESP32/Pico devices. Seems to have a real complicated build process and is there a simple way to debug?   
+I initially tried pure ROS2 development but I just don't understand the development/build/debug environment of ROS2. I like the modern dev methods of VS Code on Windows/Linux (local and remote) and Thonny for ESP32/Pico devices. ROS2 seems to have a real complicated build procesS, is there a simple way to debug?   
 
 So, my framework.  The framework uses Python/MicroPython Asyncio to break the code into tasks that communicate via messages over topics.  The framework allows for internal messaging or via the ROS2 bridge to external devices that are on the WiFi network.
 
